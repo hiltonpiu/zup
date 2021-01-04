@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Dashboard</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/highchart.css">
+<!--===============================================================================================-->
+</head>
+<body>    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box-profile">
+                    <div class="img-profile">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row ">                            
+            <div class="col-sm-12 m-t-50">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="fs-30"> João Filipe </span> <br/>
+                        <span class="fs-15"> @joaoFilipeZup </span> <br/>
+                        <span class="fs-18"> mais louco que o Batman </span> <br/>
+                        <span class="fs-15"> Salvador </span> <br/>
+
+                        <div class="m-t-10">
+                            <span class="col-sm-6"> <b>32</b> Following </span>
+                            <span class="col-sm-6"> <b>14</b> Followers </span>
+                        </div>                         
+                    </div>
+                    <div class="col-sm-6 fs-30">
+                        <span class="float-r">
+                            <i class="fa fa-twitter-square"></i>
+                            <i class="fa fa-linkedin-square"></i>
+                            <i class="fa fa-facebook-square"></i>
+                            <i class="fa fa-github-square"></i>
+                        </span>             
+                    </div>  
+                </div>
+            </div>  
+        </div>        
+        <hr class="show-hr">
+        <div class="row">            
+            <div class="col-sm-12 p-t-10 p-b-25">
+                <!-- <span>
+                    <i class="fa fa-circle-o-notch fa-spin"></i>
+                    <i class="fa fa-spinner fa-spin"></i>
+                    <i class="fa fa-refresh fa-spin"></i>
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-spinner fa-pulse"></i>
+                </span> -->
+                <span>
+                    Project | *nome projeto* :
+                </span>
+            </div>            
+            <div class="col-sm-4">
+                <button class="btn btn-orange" id="btn-new">
+                    <span id="fa-loading-btn-new"><i class="fa fa-circle-o-notch fa-spin"></i></span>
+                    <span id="text-btn-new">New</span>                    
+                </button>                
+                <div class="progress m-t-10">
+                    <div class="progress-bar" id="progress-bar-btn-new" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-orange" id="btn-start">
+                    <span id="fa-loading-btn-start"><i class="fa fa-cog fa-spin"></i></span>
+                    <span id="text-btn-start">Start</span>
+                </button>
+                
+                <div class="progress m-t-10">
+                    <div class="progress-bar" id="progress-bar-btn-start" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-orange" id="btn-push">
+                    <span id="fa-loading-btn-push"><i class="fa fa-spinner fa-pulse"></i></span>
+                    <span>Push</span>
+                </button>
+                <div class="progress m-t-10">
+                    <div class="progress-bar" id="progress-bar-btn-push" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+            </div>
+        </div>
+        <hr class="show-hr">
+        <div class="row">
+            <div class="col-sm-3">
+                <span class="txt-title">
+                    Communities                     
+                </span>
+                <button>
+                    <span class="btn btn-circle">
+                        +
+                    </span>                    
+                </button>
+                <div class="bgwhite bd-dash">
+                    <button class="btn-master text-left"> 
+                        <span class="span-square-leg m-r-8"></span>
+                        <span class="txt-btn">Flutter</span>                        
+                        <span class="span-circle bggreen">3</span>
+                    </button>
+                    <button class="btn-master text-left"> 
+                        <span class="span-square-leg m-r-8"></span>
+                        <span class="txt-btn">React</span>                        
+                        <span class="span-circle bggreen">6</span>
+                    </button>
+                    <button class="btn-master text-left"> 
+                        <span class="span-square-leg m-r-8"></span>
+                        <span class="txt-btn">Android</span>                        
+                        <span class="span-circle bggreen">9</span>
+                    </button>
+                    <button class="btn-master text-left"> 
+                        <span class="span-square-leg m-r-8"></span>
+                        <span class="txt-btn">iOS</span>                        
+                        <span class="span-circle bggreen">5</span>
+                    </button>
+                    <button class="btn-master text-left"> 
+                        <span class="span-square-leg m-r-8"></span>
+                        <span class="txt-btn">Spinnaker</span>                        
+                        <span class="span-circle bggreen">3</span>
+                    </button>
+                    <button class="btn-master text-left"> 
+                        <span class="span-square-leg m-r-8"></span>
+                        <span class="txt-btn">Rust</span>                        
+                        <span class="span-circle bggreen">4</span>
+                    </button>
+                    <button class="btn-master text-left"> 
+                        <span class="span-square-leg m-r-8"></span>
+                        <span class="txt-btn">Go</span>                        
+                        <span class="span-circle bggreen">3</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <span class="txt-title">
+                    Schedule                     
+                </span>
+                <button>
+                    <span class="btn btn-circle">
+                        +
+                    </span>                    
+                </button>
+                <div class="bgwhite bd-dash">
+                    <button class="btn-master text-left txt-btn"> 
+                        <i class="fa fa-sun-o"></i>
+                        <span class="m-l-5">Morning Yoga</span>                        
+                        <span class="float-r">08:30</span>
+                    </button>
+                    <button class="btn-master text-left txt-btn"> 
+                        <i class="fa fa-clock-o"></i>
+                        <span class="m-l-5">Planning</span>                        
+                        <span class="float-r">09:00</span>
+                    </button>
+                    <button class="btn-master text-left txt-btn"> 
+                        <i class="fa fa-cutlery"></i>
+                        <span class="m-l-5">Lunch</span>                        
+                        <span class="float-r">12:30</span>
+                    </button>
+                    <button class="btn-master text-left txt-btn"> 
+                        <i class="fa fa-desktop"></i>
+                        <span class="m-l-5">Kick off</span>                        
+                        <span class="float-r">14:00</span>
+                    </button>
+                    <button class="btn-master text-left txt-btn"> 
+                        <i class="fa fa-coffee"></i>
+                        <span class="m-l-5">Coffee</span>                        
+                        <span class="float-r">17:00</span>
+                    </button>                    
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <span class="txt-title">
+                    Teams
+                </span>                
+                <div class="bgwhite bd-dash">
+                    <div class="div-square-pro"></div>
+                                   
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Chart do github -->
+        <div class="row">
+            <div class="col-sm-12">
+                <figure class="highcharts-figure">
+                    <div id="chartgit"> </div>
+                </figure>            
+            </div>
+        </div>
+    </div>
+        
+
+<!--===============================================================================================-->
+    
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script src="https://code.highcharts.com/modules/series-label.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <!--===============================================================================================-->
+	    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="vendor/daterangepicker/moment.min.js"></script>
+        <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+        <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+        <script src="js/main.js"></script>
+
+        <script src="js/highchart.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+    </html>
